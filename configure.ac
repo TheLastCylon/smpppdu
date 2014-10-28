@@ -17,7 +17,7 @@ LT_INIT([disable-static])
 # refer to the libtool manual, section "Updating library version information":
 # http://www.gnu.org/software/libtool/manual/html_node/Updating-version-info.html
 AC_SUBST([SMPP_PDU_SO_VERSION], [0:5:0])
-AC_SUBST([SMPP_PDU_API_VERSION], [1])
+AC_SUBST([SMPP_PDU_API_VERSION], [0.5])
 
 # Override the template file name of the generated .pc file, so that there
 # is no need to rename the template file when the API version changes.

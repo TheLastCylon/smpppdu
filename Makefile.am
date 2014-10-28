@@ -73,7 +73,7 @@ libsmpp_pdu_@SMPP_PDU_API_VERSION@_la_SOURCES = smpp_pdu/alert_notification.cpp 
 ## Instruct libtool to include ABI version information in the generated shared
 ## library file (.so).  The library ABI version is defined in configure.ac, so
 ## that all version information is kept in one place.
-libsmpp_pdu_@SMPP_PDU_API_VERSION@_la_LDFLAGS = -version-info $(SMPP_PDU_API_VERSION)
+libsmpp_pdu_@SMPP_PDU_API_VERSION@_la_LDFLAGS = -version-info 1
 
 ## Define the list of public header files and their install location.  The
 ## nobase_ prefix instructs Automake to not strip the directory part from each

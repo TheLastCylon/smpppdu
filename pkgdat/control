@@ -1,0 +1,21 @@
+Source: smpppdu
+Priority: optional
+Maintainer: Dirk Botha (TheLastCylon) <bothadj@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, libfakeroot:amd64, libc6:i386, file, libsigsegv2:amd64, cpio, libboost1.54-dev, libegl1-mesa:amd64, gawk, mime-support, libgl1-mesa-glx:i386, libmagic1:amd64, libgl1-mesa-glx:amd64
+Standards-Version: 3.9.4
+Section: libs
+Homepage: http://thelastcylon.github.io/kisscpp/index.html
+
+Package: smpppdu-dev
+Section: libdevel
+Architecture: any
+Depends: kisscpp (= ${binary:Version})
+Description: Keep it simple stupid - c plus plus library
+ KISSCPP is a library containing classes, templates and supporting functions to facilitate rapid application development of C++ server side applications. It is in it's part, heavily dependent upon the C++ Boost libraries.
+
+Package: smpppdu
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Keep it simple stupid - c plus plus library
+ KISSCPP is a library containing classes, templates and supporting functions to facilitate rapid application development of C++ server side applications. It is in it's part, heavily dependent upon the C++ Boost libraries.

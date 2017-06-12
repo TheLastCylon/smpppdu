@@ -36,8 +36,9 @@ install-sh
 libtool
 ltmain.sh
 missing
-smpp_pdu/.deps/
-smpp_pdu/.dirstamp
-smpp_pduconfig.h
+smpppdu/.deps/
+smpppdu/.dirstamp
+smpppduconfig.h
 stamp-h*
 
+compile

@@ -1,4 +1,4 @@
-## libsmpp_pdu:
+## libsmpppdu:
 ## put descriptive splurge here.
 
 ## Place generated object files (.o) into the same directory as their source
@@ -16,7 +16,7 @@ ACLOCAL_AMFLAGS = ${ACLOCAL_FLAGS}
 ## The libtool archive file (.la) will be installed into the directory named
 ## by the predefined variable $(bindir), along with the actual shared library
 ## file (.so).
-lib_LTLIBRARIES = libsmpp_pdu-@SMPP_PDU_API_VERSION@.la
+lib_LTLIBRARIES = libsmpppdu-@SMPP_PDU_API_VERSION@.la
 
 ## Define the source file list for the "libexample-@EXAMPLE_API_VERSION@.la"
 ## target.  Note that @EXAMPLE_API_VERSION@ is not interpreted by Automake and
@@ -26,111 +26,111 @@ lib_LTLIBRARIES = libsmpp_pdu-@SMPP_PDU_API_VERSION@.la
 ## rules which invoke the C++ compiler to produce a libtool object file (.lo)
 ## from each source file.  Note that it is not necessary to list header files
 ## which are already listed elsewhere in a _HEADERS variable assignment.
-libsmpp_pdu_@SMPP_PDU_API_VERSION@_la_SOURCES = smpp_pdu/alert_notification.cpp       \
-                                                smpp_pdu/bind_receiver.cpp            \
-                                                smpp_pdu/bind_receiver_resp.cpp       \
-                                                smpp_pdu/bind_transceiver.cpp         \
-                                                smpp_pdu/bind_transceiver_resp.cpp    \
-                                                smpp_pdu/bind_transmitter.cpp         \
-                                                smpp_pdu/bind_transmitter_resp.cpp    \
-                                                smpp_pdu/bind_type.cpp                \
-                                                smpp_pdu/bind_type_resp.cpp           \
-                                                smpp_pdu/broadcast_sm.cpp             \
-                                                smpp_pdu/broadcast_sm_resp.cpp        \
-                                                smpp_pdu/cancel_broadcast_sm.cpp      \
-                                                smpp_pdu/cancel_broadcast_sm_resp.cpp \
-                                                smpp_pdu/cancel_sm.cpp                \
-                                                smpp_pdu/cancel_sm_resp.cpp           \
-                                                smpp_pdu/data_sm.cpp                  \
-                                                smpp_pdu/data_sm_resp.cpp             \
-                                                smpp_pdu/deliver_sm.cpp               \
-                                                smpp_pdu/deliver_sm_resp.cpp          \
-                                                smpp_pdu/enquire_link.cpp             \
-                                                smpp_pdu/enquire_link_resp.cpp        \
-                                                smpp_pdu/error.cpp                    \
-                                                smpp_pdu/generic_nack.cpp             \
-                                                smpp_pdu/header_pdu.cpp               \
-                                                smpp_pdu/octet_array.cpp              \
-                                                smpp_pdu/outbind.cpp                  \
-                                                smpp_pdu/query_broadcast_sm.cpp       \
-                                                smpp_pdu/query_broadcast_sm_resp.cpp  \
-                                                smpp_pdu/query_sm.cpp                 \
-                                                smpp_pdu/query_sm_resp.cpp            \
-                                                smpp_pdu/replace_sm.cpp               \
-                                                smpp_pdu/replace_sm_resp.cpp          \
-                                                smpp_pdu/sequence_number.cpp          \
-                                                smpp_pdu/smpp_pdu.cpp                 \
-                                                smpp_pdu/standard_parameters.cpp      \
-                                                smpp_pdu/submit_multi.cpp             \
-                                                smpp_pdu/submit_multi_resp.cpp        \
-                                                smpp_pdu/submit_sm.cpp                \
-                                                smpp_pdu/submit_sm_resp.cpp           \
-                                                smpp_pdu/tlv.cpp                      \
-                                                smpp_pdu/tlv_list.cpp                 \
-                                                smpp_pdu/unbind.cpp                   \
-                                                smpp_pdu/unbind_resp.cpp
+libsmpppdu_@SMPP_PDU_API_VERSION@_la_SOURCES = smpppdu/alert_notification.cpp       \
+                                                smpppdu/bind_receiver.cpp            \
+                                                smpppdu/bind_receiver_resp.cpp       \
+                                                smpppdu/bind_transceiver.cpp         \
+                                                smpppdu/bind_transceiver_resp.cpp    \
+                                                smpppdu/bind_transmitter.cpp         \
+                                                smpppdu/bind_transmitter_resp.cpp    \
+                                                smpppdu/bind_type.cpp                \
+                                                smpppdu/bind_type_resp.cpp           \
+                                                smpppdu/broadcast_sm.cpp             \
+                                                smpppdu/broadcast_sm_resp.cpp        \
+                                                smpppdu/cancel_broadcast_sm.cpp      \
+                                                smpppdu/cancel_broadcast_sm_resp.cpp \
+                                                smpppdu/cancel_sm.cpp                \
+                                                smpppdu/cancel_sm_resp.cpp           \
+                                                smpppdu/data_sm.cpp                  \
+                                                smpppdu/data_sm_resp.cpp             \
+                                                smpppdu/deliver_sm.cpp               \
+                                                smpppdu/deliver_sm_resp.cpp          \
+                                                smpppdu/enquire_link.cpp             \
+                                                smpppdu/enquire_link_resp.cpp        \
+                                                smpppdu/error.cpp                    \
+                                                smpppdu/generic_nack.cpp             \
+                                                smpppdu/header_pdu.cpp               \
+                                                smpppdu/octet_array.cpp              \
+                                                smpppdu/outbind.cpp                  \
+                                                smpppdu/query_broadcast_sm.cpp       \
+                                                smpppdu/query_broadcast_sm_resp.cpp  \
+                                                smpppdu/query_sm.cpp                 \
+                                                smpppdu/query_sm_resp.cpp            \
+                                                smpppdu/replace_sm.cpp               \
+                                                smpppdu/replace_sm_resp.cpp          \
+                                                smpppdu/sequence_number.cpp          \
+                                                smpppdu/smpppdu.cpp                 \
+                                                smpppdu/standard_parameters.cpp      \
+                                                smpppdu/submit_multi.cpp             \
+                                                smpppdu/submit_multi_resp.cpp        \
+                                                smpppdu/submit_sm.cpp                \
+                                                smpppdu/submit_sm_resp.cpp           \
+                                                smpppdu/tlv.cpp                      \
+                                                smpppdu/tlv_list.cpp                 \
+                                                smpppdu/unbind.cpp                   \
+                                                smpppdu/unbind_resp.cpp
 
 ## Instruct libtool to include ABI version information in the generated shared
 ## library file (.so).  The library ABI version is defined in configure.ac, so
 ## that all version information is kept in one place.
-libsmpp_pdu_@SMPP_PDU_API_VERSION@_la_LDFLAGS = -version-info 1
+libsmpppdu_@SMPP_PDU_API_VERSION@_la_LDFLAGS = -version-info 1
 
 ## Define the list of public header files and their install location.  The
 ## nobase_ prefix instructs Automake to not strip the directory part from each
 ## filename, in order to avoid the need to define separate file lists for each
 ## installation directory.  This only works if the directory hierarchy in the
 ## source tree matches the hierarchy at the install location, however.
-smpp_pdu_includedir = $(includedir)/smpp_pdu-$(SMPP_PDU_API_VERSION)
-nobase_smpp_pdu_include_HEADERS = smpp_pdu_all.hpp                 \
-                                  smpp_pdu/alert_notification.hpp       \
-                                  smpp_pdu/bind_receiver.hpp            \
-                                  smpp_pdu/bind_receiver_resp.hpp       \
-                                  smpp_pdu/bind_transceiver.hpp         \
-                                  smpp_pdu/bind_transceiver_resp.hpp    \
-                                  smpp_pdu/bind_transmitter.hpp         \
-                                  smpp_pdu/bind_transmitter_resp.hpp    \
-                                  smpp_pdu/bind_type.hpp                \
-                                  smpp_pdu/bind_type_resp.hpp           \
-                                  smpp_pdu/broadcast_sm.hpp             \
-                                  smpp_pdu/broadcast_sm_resp.hpp        \
-                                  smpp_pdu/cancel_broadcast_sm.hpp      \
-                                  smpp_pdu/cancel_broadcast_sm_resp.hpp \
-                                  smpp_pdu/cancel_sm.hpp                \
-                                  smpp_pdu/cancel_sm_resp.hpp           \
-                                  smpp_pdu/command_id.hpp               \
-                                  smpp_pdu/command_length.hpp           \
-                                  smpp_pdu/command_status.hpp           \
-                                  smpp_pdu/data_sm.hpp                  \
-                                  smpp_pdu/data_sm_resp.hpp             \
-                                  smpp_pdu/deliver_sm.hpp               \
-                                  smpp_pdu/deliver_sm_resp.hpp          \
-                                  smpp_pdu/endian_util.hpp              \
-                                  smpp_pdu/enquire_link.hpp             \
-                                  smpp_pdu/enquire_link_resp.hpp        \
-                                  smpp_pdu/error.hpp                    \
-                                  smpp_pdu/generic_nack.hpp             \
-                                  smpp_pdu/header_pdu.hpp               \
-                                  smpp_pdu/lexical_cast.hpp             \
-                                  smpp_pdu/octet_array.hpp              \
-                                  smpp_pdu/octet.hpp                    \
-                                  smpp_pdu/outbind.hpp                  \
-                                  smpp_pdu/query_broadcast_sm.hpp       \
-                                  smpp_pdu/query_broadcast_sm_resp.hpp  \
-                                  smpp_pdu/query_sm.hpp                 \
-                                  smpp_pdu/query_sm_resp.hpp            \
-                                  smpp_pdu/replace_sm.hpp               \
-                                  smpp_pdu/replace_sm_resp.hpp          \
-                                  smpp_pdu/sequence_number.hpp          \
-                                  smpp_pdu/smpp_pdu.hpp                 \
-                                  smpp_pdu/standard_parameters.hpp      \
-                                  smpp_pdu/submit_multi.hpp             \
-                                  smpp_pdu/submit_multi_resp.hpp        \
-                                  smpp_pdu/submit_sm.hpp                \
-                                  smpp_pdu/submit_sm_resp.hpp           \
-                                  smpp_pdu/tlv.hpp                      \
-                                  smpp_pdu/tlv_list.hpp                 \
-                                  smpp_pdu/unbind.hpp                   \
-                                  smpp_pdu/unbind_resp.hpp
+smpppdu_includedir = $(includedir)/smpppdu-$(SMPP_PDU_API_VERSION)
+nobase_smpppdu_include_HEADERS = smpppdu_all.hpp                 \
+                                 smpppdu/alert_notification.hpp       \
+                                 smpppdu/bind_receiver.hpp            \
+                                 smpppdu/bind_receiver_resp.hpp       \
+                                 smpppdu/bind_transceiver.hpp         \
+                                 smpppdu/bind_transceiver_resp.hpp    \
+                                 smpppdu/bind_transmitter.hpp         \
+                                 smpppdu/bind_transmitter_resp.hpp    \
+                                 smpppdu/bind_type.hpp                \
+                                 smpppdu/bind_type_resp.hpp           \
+                                 smpppdu/broadcast_sm.hpp             \
+                                 smpppdu/broadcast_sm_resp.hpp        \
+                                 smpppdu/cancel_broadcast_sm.hpp      \
+                                 smpppdu/cancel_broadcast_sm_resp.hpp \
+                                 smpppdu/cancel_sm.hpp                \
+                                 smpppdu/cancel_sm_resp.hpp           \
+                                 smpppdu/command_id.hpp               \
+                                 smpppdu/command_length.hpp           \
+                                 smpppdu/command_status.hpp           \
+                                 smpppdu/data_sm.hpp                  \
+                                 smpppdu/data_sm_resp.hpp             \
+                                 smpppdu/deliver_sm.hpp               \
+                                 smpppdu/deliver_sm_resp.hpp          \
+                                 smpppdu/endian_util.hpp              \
+                                 smpppdu/enquire_link.hpp             \
+                                 smpppdu/enquire_link_resp.hpp        \
+                                 smpppdu/error.hpp                    \
+                                 smpppdu/generic_nack.hpp             \
+                                 smpppdu/header_pdu.hpp               \
+                                 smpppdu/lexical_cast.hpp             \
+                                 smpppdu/octet_array.hpp              \
+                                 smpppdu/octet.hpp                    \
+                                 smpppdu/outbind.hpp                  \
+                                 smpppdu/query_broadcast_sm.hpp       \
+                                 smpppdu/query_broadcast_sm_resp.hpp  \
+                                 smpppdu/query_sm.hpp                 \
+                                 smpppdu/query_sm_resp.hpp            \
+                                 smpppdu/replace_sm.hpp               \
+                                 smpppdu/replace_sm_resp.hpp          \
+                                 smpppdu/sequence_number.hpp          \
+                                 smpppdu/smpppdu.hpp                 \
+                                 smpppdu/standard_parameters.hpp      \
+                                 smpppdu/submit_multi.hpp             \
+                                 smpppdu/submit_multi_resp.hpp        \
+                                 smpppdu/submit_sm.hpp                \
+                                 smpppdu/submit_sm_resp.hpp           \
+                                 smpppdu/tlv.hpp                      \
+                                 smpppdu/tlv_list.hpp                 \
+                                 smpppdu/unbind.hpp                   \
+                                 smpppdu/unbind_resp.hpp
 
 ## The generated configuration header is installed in its own subdirectory of
 ## $(libdir).  The reason for this is that the configuration information put
@@ -143,15 +143,15 @@ nobase_smpp_pdu_include_HEADERS = smpp_pdu_all.hpp                 \
 ## in _HEADERS variables are normally included in the distribution, but the
 ## configuration header file is generated at configure time and should not be
 ## shipped with the source tarball.
-smpp_pdu_libincludedir = $(libdir)/smpp_pdu-$(SMPP_PDU_API_VERSION)/include
-nodist_smpp_pdu_libinclude_HEADERS = smpp_pduconfig.h
+smpppdu_libincludedir = $(libdir)/smpppdu-$(SMPP_PDU_API_VERSION)/include
+nodist_smpppdu_libinclude_HEADERS = smpppduconfig.h
 
 ## Install the generated pkg-config file (.pc) into the expected location for
 ## architecture-dependent package configuration information.  Occasionally,
 ## pkg-config files are also used for architecture-independent data packages,
 ## in which case the correct install location would be $(datadir)/pkgconfig.
 pkgconfigdir = $(libdir)/pkgconfig
-pkgconfig_DATA = smpp_pdu-$(SMPP_PDU_API_VERSION).pc
+pkgconfig_DATA = smpppdu-$(SMPP_PDU_API_VERSION).pc
 
 ## Define an independent executable script for inclusion in the distribution
 ## archive.  However, it will not be installed on an end user's system due to
